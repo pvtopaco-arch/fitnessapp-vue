@@ -1,0 +1,118 @@
+:root {
+  --bs-primary: #f4511e;
+  --bs-primary-rgb: 244, 81, 30;
+  --bs-dark: #1c1c1e;
+  --accent: #f4511e;
+  --accent-light: #ff7043;
+  --bg-page: #f5f5f4;
+}
+
+body {
+  color: #1E293B;
+ 
+  /* Low-opacity background image:
+     a semi-transparent color layer is stacked on top of the photo,
+     so the higher the last number below, the LESS of the photo shows through. */
+  background-image:
+    linear-gradient(rgba(248, 250, 252, 0.75), rgba(248, 250, 252, 0.75)),
+    url("./gym-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+ 
+.navbar-fit {
+  background-color: #1c1c1e;
+}
+
+.navbar-fit .navbar-brand {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.navbar-fit .nav-link {
+  color: #d4d4d4;
+}
+
+.navbar-fit .nav-link:hover,
+.navbar-fit .nav-link.router-link-active {
+  color: var(--accent-light);
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.btn-primary:hover {
+  background-color: #d8420f;
+  border-color: #d8420f;
+}
+
+.btn-outline-primary {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.text-primary {
+  color: var(--accent) !important;
+}
+
+.stat-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #e5e5e4;
+}
+
+.stat-box .num {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.workout-card {
+  background: #fff;
+  border: 1px solid #e5e5e4;
+  border-left: 5px solid var(--accent);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.workout-card.is-done {
+  border-left-color: #4caf50;
+  opacity: 0.85;
+}
+
+.workout-card .workout-name {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.badge-pending {
+  background-color: #fdecea;
+  color: var(--accent);
+}
+
+.badge-done {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.auth-card {
+  max-width: 420px;
+  margin: 3rem auto;
+  background: #fff;
+  border: 1px solid #e5e5e4;
+  border-radius: 10px;
+  padding: 2rem;
+}
